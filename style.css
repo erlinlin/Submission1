@@ -1,0 +1,108 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.img-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-container img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(230, 121, 121, 0.336);
+}
+
+.info-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info-container h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+	align-items: center;
+	color: floralwhite;
+}
+
+.info-container p {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: aqua;
+}
+
+.info-container h4 {
+	color: lightcoral;
+}
+
+.info-container img {
+	width: 60px;
+	height: 60px;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+.lit-container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 360px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: aqua;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+

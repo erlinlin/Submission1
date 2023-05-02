@@ -6,10 +6,8 @@ runtime_config:
 
 handlers:
 - url: /.*
-  script: auto
   secure: always
   redirect_http_response_code: 301
-  static_files:
+  script:
     - index.php
     - style.css
-  upload: .(php|css)$
